@@ -6,9 +6,9 @@
 	{
 		"class": "tabset_control",
 		"layer0.texture": "Seti_UI/Main/tabset-background.png",
-		"layer0.inner_margin": [1, 7],
+		"layer0.inner_margin": [0, 0],
 		"layer0.opacity": 1,
-		"content_margin": [0,0,4,4],
+		"content_margin": [0,0,0,0],
 		"tab_overlap": 1,
 		"tab_width": 190,
 		"tab_min_width": 50,
@@ -252,7 +252,7 @@
 	// Standard vertical scroll bar
 	{
 		"class": "scroll_bar_control",
-		"layer0.tint": [11,16,21],
+		"layer0.tint": [34,37,43],
 		"layer0.opacity": 1,
 		"layer0.inner_margin": 0,
 		"blur": true
@@ -261,21 +261,21 @@
 	{
 		"class": "scroll_bar_control",
 		"attributes": ["horizontal"],
-		"layer0.tint": [11,16,21],
+		"layer0.tint": [34,37,43],
 		"layer0.inner_margin": 0,
 		"blur": true
 	},
 	// Standard scroll bar corner
 	{
 		"class": "scroll_corner_control",
-		"layer0.tint":[11,16,21],
+		"layer0.tint":[34,37,43],
 		"layer0.inner_margin": 0,
 		"layer0.opacity": 1
 	},
 	// Standard vertical scroll puck
 	{
 		"class": "puck_control",
-		"layer0.tint":[22,31,39], // auto complete SB
+		"layer0.tint":[55,60,69], // auto complete SB
 		"layer0.opacity": 1,
 		"layer0.inner_margin": 0,
 		"content_margin": [3,0],
@@ -285,7 +285,7 @@
 	{
 		"class": "puck_control",
 		"attributes": ["horizontal"],
-		"layer0.tint":[22,31,39],
+		"layer0.tint":[55,60,69],
 		"layer0.inner_margin": 0,
 		"content_margin": [12,3],
 		"blur": false
@@ -491,7 +491,7 @@
 	// Status bar container
 	{
 		"class": "status_bar",
-		"layer0.tint": [16,17,18],
+		"layer0.tint": [20,21,25],
 		"layer0.opacity": 1,
 		"content_margin": [20, 7, 10, 7]
 	},
@@ -515,7 +515,7 @@
 	{
 		"class": "sidebar_container",
 		"layer0.opacity": 1,
-		"layer0.tint": [16,17,18],
+		"layer0.tint": [34,37,43],
 		"content_margin": [0,5,0,0]
 	},
 	// Sidebar tree || entries
@@ -581,7 +581,7 @@
 	// Sidebar heading
 	{
 		"class": "sidebar_heading",
-		"color": [55,72,74],
+		"color": [79,153,211],
 		"font.bold": true
 	},
 	{
@@ -607,7 +607,7 @@
 	{
 		"class": "sidebar_label",
 		"parents": [{"class": "tree_row","attributes": ["expandable"]}],
-		"color": [80,105,108],
+		"color": [108,113,124],
 		"font.bold": false
 	},
 	{
@@ -834,7 +834,7 @@
 	{
 		"class": "panel_control",
 		"layer0.opacity": 1,
-		"layer0.tint": [16,17,18],
+		"layer0.tint": [20,21,25],
 		"content_margin": 0
 	},
 	// Quick panel background
@@ -861,12 +861,12 @@
 	{
 		"class": "quick_panel",
 		"row_padding": [10,8],
-		"layer0.tint": [16,17,18],
+		"layer0.tint": [34,37,43],
 		"layer0.opacity": 1
 	},
 	{
 		"class": "quick_panel_row",
-		"layer0.tint": [16,17,18],
+		"layer0.tint": [34,37,43],
 		"layer0.opacity": 1
 	},
 	{
@@ -877,12 +877,12 @@
 	{
 		"class": "quick_panel_row",
 		"attributes": ["selected"],
-		"layer0.tint": [38, 38, 38]
+		"layer0.tint": [50, 55, 67]
 	},
 	{
 		"class": "quick_panel_label",
 		"fg": [255,255,255],
-		"match_fg": [104,81,49],
+		"match_fg": [79,153,211],
 		"selected_fg": [255,255,255],
 		"selected_match_fg": [255,223,0]
 	},
@@ -905,13 +905,13 @@
 
 	{
 		"class": "mini_quick_panel_row",
-		"layer0.tint": [16,17,18],
+		"layer0.tint": [34,37,43],
 		"layer0.opacity": 1
 	},
 	{
 		"class": "mini_quick_panel_row",
 		"attributes": ["hover"],
-		"layer0.tint": [38, 38, 38]
+		"layer0.tint": [34,37,43]
 	},
 	{
 		"class": "mini_quick_panel_row",
@@ -926,7 +926,7 @@
 	{
 		"class": "popup_control",
 		"content_margin": 0,
-		"layer0.tint": [16,17,18],
+		"layer0.tint": [34,37,43],
 		"layer0.opacity": 1
 	},
 	{
@@ -936,7 +936,7 @@
 	{
 		"class": "auto_complete_label",
 		"fg": [255,255,255],
-		"match_fg": [104,81,49],
+		"match_fg": [79,153,211],
 		"selected_fg": [255,255,255],
 		"selected_match_fg": [255,223,0]
 	},
