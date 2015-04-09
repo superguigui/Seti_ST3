@@ -6,13 +6,13 @@
 	{
 		"class": "tabset_control",
 		"layer0.texture": "Seti_UI/Main/tabset-background.png",
-		"layer0.inner_margin": [0, 0],
+		"layer0.inner_margin": [0,0],
 		"layer0.opacity": 1,
-		"content_margin": [0,0,0,0],
+		"content_margin": [0,0,10,0],
 		"tab_overlap": 1,
 		"tab_width": 190,
 		"tab_min_width": 50,
-		"tab_height": 45,
+		"tab_height": 50,
 		"mouse_wheel_switch": false
 	},
 	// options
@@ -792,7 +792,7 @@
 	{
 		"class": "button_control",
 		"attributes": ["hover"],
-		"layer0.tint": [96,125,139]
+		"layer0.tint": [62,78,85]
 	},
 	// Pressed button state
 	{
@@ -810,7 +810,7 @@
 		"class": "text_line_control",
 		"layer0.tint": [21,23,24], // is the same color of BG in widget file
 		"layer0.opacity": 1,
-		"content_margin": [3,1,5,0] // control the search panel height , line padding also effects this
+		"content_margin": [3,6,5,0] // control the search panel height , line padding also effects this
 	},
 	// options @ BOTTOM PANEL BUTTONS
 	// Text input dropdown
@@ -1081,55 +1081,55 @@
 	{
 		"class": "icon_regex",
 		"layer0.texture": "Seti_UI/Main/regex@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_regex",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_regex",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 	// Case sensitive search button
 	{
 		"class": "icon_case",
 		"layer0.texture": "Seti_UI/Main/casesens@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_case",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_case",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 	// Match whole word search button
 	{
 		"class": "icon_whole_word",
 		"layer0.texture": "Seti_UI/Main/wholeword@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_whole_word",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_whole_word",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 
 //========================================================
@@ -1140,37 +1140,37 @@
 	{
 		"class": "icon_context",
 		"layer0.texture": "Seti_UI/Main/context@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_context",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_context",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 	// Use search buffer
 	{
 		"class": "icon_use_buffer",
 		"layer0.texture": "Seti_UI/Main/buffer@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_use_buffer",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_use_buffer",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 
 //========================================================
@@ -1181,55 +1181,55 @@
 	{
 		"class": "icon_reverse",
 		"layer0.texture": "Seti_UI/Main/reverse@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_reverse",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_reverse",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 	// Search wrap button
 	{
 		"class": "icon_wrap",
 		"layer0.texture": "Seti_UI/Main/wrap@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_wrap",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_wrap",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 	// Search in selection button
 	{
 		"class": "icon_in_selection",
 		"layer0.texture": "Seti_UI/Main/selection@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_in_selection",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_in_selection",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 
 //========================================================
@@ -1240,19 +1240,19 @@
 	{
 		"class": "icon_preserve_case",
 		"layer0.texture": "Seti_UI/Main/casesens@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_preserve_case",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_preserve_case",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	},
 
 //========================================================
@@ -1263,18 +1263,18 @@
 	{
 		"class": "icon_highlight",
 		"layer0.texture": "Seti_UI/Main/highlight@2x.png",
-		"layer0.tint": [96,125,139],
+		"layer0.tint": [62,78,85],
 		"layer0.opacity": 1,
 		"content_margin": 8
 	},
 	{
 		"class": "icon_highlight",
 		"parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-		"layer0.tint": [255,51,102]
+		"layer0.tint": [79,153,211]
 	},
 	{
 		"class": "icon_highlight",
 		"parents": [{"class": "icon_button_control","attributes": ["hover"]}],
-		"layer0.tint": [148,211,209]
+		"layer0.tint": [255,255,2]
 	}
 ]
