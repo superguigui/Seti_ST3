@@ -16,5 +16,5 @@ Sublime Text 3 port by [ctf0](https://github.com/ctf0/Seti_ST3)
 * In your `Preferences.sublime-settins` file add :
 ```
   "theme": "SuperSeti.sublime-theme",
-  "color_scheme": "Packages/SuperSeti/Scheme/Twilight (SL).tmTheme"
+  "color_scheme": "Packages/SuperSeti/Scheme/Twilight.tmTheme"
 ```
