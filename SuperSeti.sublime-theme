@@ -10,8 +10,11 @@
 	Grey hover is white
 	[255,255,255]
 
-	Highlight dark
+	Blue Highlight dark
 	[79,153,211]
+
+	Blue Highlight hover
+	[2,174,255]
 
 	Useless scrollbar color
 	[22,37,43]
@@ -25,10 +28,13 @@
 	Minimap selection
 	[20,20,20
 */
+
+
 [
-//========================================================
-//  TABS (REGULAR)
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  TABS (REGULAR)
+-------------------------------------------------------- */
+
 	// Tab set
 	{
 		"class": "tabset_control",
@@ -42,27 +48,6 @@
 		"tab_height": 50,
 		"mouse_wheel_switch": false
 	},
-	// options
-	{
-		"class": "tabset_control",
-		"settings": ["mouse_wheel_tabswitch"],
-		"mouse_wheel_switch": true
-	},
-	{
-		"class": "tabset_control",
-		"settings": ["Seti_tabs_small"],
-		"tab_height": 35,
-	},
-	{
-		"class": "tabset_control",
-		"settings": ["Seti_tabs_med"],
-		"tab_height": 40,
-	},
-	{
-		"class": "tabset_control",
-		"settings": ["Seti_no_bar_undertabs"],
-		"content_margin": 0,
-	},
 
 	// Tab element
 	{
@@ -74,23 +59,27 @@
 		"layer0.inner_margin": 5,
 		"layer0.opacity": 1
 	},
+
 	// Tab close state
 	{
 		"class": "tab_control",
 		"settings": ["show_tab_close_buttons"],
 		"content_margin": [10, 1, 7, 3]
 	},
+
 	// Tab hover state
 	{
 		"class": "tab_control",
 		"attributes": ["hover"]
 	},
+
 	// Tab active state
 	{
 		"class": "tab_control",
 		"attributes": ["selected"],
 		"layer0.texture": "SuperSeti/Main/tab-active.png"
 	},
+
 	// Tab dirty state (close button hidden)
 	{
 		"class": "tab_control",
@@ -99,15 +88,16 @@
 		"content_margin": [12,3,7,3]
 	},
 
-//========================================================
-//  TAB BUTTONS
-//--------------------------------------------------------
+
+/* --------------------------------------------------------
+  TAB BUTTONS
+-------------------------------------------------------- */
 	// Tab close button
 	{
 		"class": "tab_close_button",
 		"layer0.texture": "SuperSeti/Main/close@2x.png",
 		"layer0.opacity": 1,
-		"layer0.tint": [170,170,170]
+		"layer0.tint": [255,255,255]
 	},
 	{
 		"class": "tab_close_button",
@@ -126,6 +116,7 @@
 		"parents": [{"class": "tab_control","attributes": ["selected"]}],
 		"layer0.opacity": 1
 	},
+
 	// Tab dirty button
 	{
 		"class": "tab_close_button",
@@ -152,6 +143,7 @@
 		"class": "tab_close_button",
 		"parents": [{"class": "tab_control","attributes": ["dirty","selected"]}]
 	},
+
 	// Tab highlight button
 	{
 		"class": "tab_close_button",
@@ -163,12 +155,14 @@
 		"settings": ["highlight_modified_tabs"],
 		"parents": [{"class": "tab_control","attributes": ["dirty","selected"]}]
 	},
+
 	// Tab close button hover
 	{
 		"class": "tab_close_button",
 		"settings": ["show_tab_close_buttons"],
 		"attributes": ["hover"]
 	},
+	
 	// Tab close button pressed
 	{
 		"class": "tab_close_button",
@@ -177,9 +171,10 @@
 		"layer0.opacity": 0.85
 	},
 
-//========================================================
-//  TAB LABELS
-//--------------------------------------------------------
+
+/* --------------------------------------------------------
+  TAB LABELS
+-------------------------------------------------------- */
 
 	{
 		"class": "tab_label",
@@ -202,9 +197,9 @@
 		"font.italic": true
 	},
 
-//========================================================
-//  TAB SCROLLING
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  TAB SCROLLING
+-------------------------------------------------------- */
 
 	// Tab dropdown
 	{
@@ -219,6 +214,7 @@
 		"layer0.texture": "SuperSeti/Main/tabset-list@2x.png",
 		"layer0.opacity": 1
 	},
+
 	// Tab scroll left
 	{
 		"class": "scroll_tabs_left_button",
@@ -232,6 +228,7 @@
 		"layer0.texture": "SuperSeti/Main/tabset-left@2x.png",
 		"layer0.opacity": 1
 	},
+
 	// Tab scroll right
 	{
 		"class": "scroll_tabs_right_button",
@@ -246,10 +243,10 @@
 		"layer0.opacity": 1
 	},
 
-//========================================================
-//  FOLD BUTTONS
-//--------------------------------------------------------
 
+/* --------------------------------------------------------
+  FOLD BUTTONS
+-------------------------------------------------------- */
 	{
 		"class": "fold_button_control",
 		"layer0.texture": "SuperSeti/Main/fold-closed@2x.png",
@@ -272,9 +269,10 @@
 		"attributes": ["expanded","hover"]
 	},
 
-//========================================================
-//  STANDARD SCROLLBARS
-//--------------------------------------------------------
+
+/* --------------------------------------------------------
+  STANDARD SCROLLBARS
+-------------------------------------------------------- */
 
 	// Standard vertical scroll bar
 	{
@@ -284,6 +282,7 @@
 		"layer0.inner_margin": 0,
 		"blur": true
 	},
+
 	// Standard horizontal scroll bar
 	{
 		"class": "scroll_bar_control",
@@ -292,6 +291,7 @@
 		"layer0.inner_margin": 0,
 		"blur": true
 	},
+
 	// Standard scroll bar corner
 	{
 		"class": "scroll_corner_control",
@@ -299,6 +299,7 @@
 		"layer0.inner_margin": 0,
 		"layer0.opacity": 1
 	},
+
 	// Standard vertical scroll puck
 	{
 		"class": "puck_control",
@@ -308,6 +309,7 @@
 		"content_margin": [3,0],
 		"blur": false
 	},
+
 	// Standard horizontal scroll puck
 	{
 		"class": "puck_control",
@@ -317,33 +319,11 @@
 		"content_margin": [12,3],
 		"blur": false
 	},
-	// options
-	{
-		"class": "puck_control",
-		"settings": ["Seti_SB_med"],
-		"content_margin": [6,0],
-	},
-	{
-		"class": "puck_control",
-		"settings": ["Seti_SB_med"],
-		"attributes": ["horizontal"],
-		"content_margin": [12,6],
-	},
-	{
-		"class": "puck_control",
-		"settings": ["Seti_SB_big"],
-		"content_margin": [10,0],
-	},
-	{
-		"class": "puck_control",
-		"settings": ["Seti_SB_big"],
-		"attributes": ["horizontal"],
-		"content_margin": [12,10],
-	},
 
-//========================================================
-//  OVERLAY SCROLLBARS
-//--------------------------------------------------------
+
+/* --------------------------------------------------------
+  OVERLAY SCROLLBARS
+-------------------------------------------------------- */
 
 	// Overlay toggle scroll bar
 	{
@@ -356,14 +336,16 @@
 		"settings": ["!overlay_scroll_bars"],
 		"overlay": false
 	},
+
 	// Overlay vertical scroll bar
 	{
 		"class": "scroll_bar_control",
 		"settings": ["overlay_scroll_bars"],
-		"layer0.tint":[22,37,43], // Main SB
+		"layer0.tint":[22,37,43],
 		"layer0.inner_margin": [0,5],
 		"blur": true
 	},
+
 	// Overlay horizontal scroll bar
 	{
 		"class": "scroll_bar_control",
@@ -373,6 +355,7 @@
 		"layer0.inner_margin": [5,0],
 		"blur": true
 	},
+
 	// Overlay vertical puck
 	{
 		"class": "puck_control",
@@ -381,6 +364,7 @@
 		"content_margin": [2,38],
 		"blur": true
 	},
+
 	// Overlay horizontal puck
 	{
 		"class": "puck_control",
@@ -390,52 +374,29 @@
 		"content_margin": [16,2],
 		"blur": true
 	},
-	// options
-	{
-		"class": "puck_control",
-		"settings": ["Seti_SB_bright"],
-		"layer0.tint":[55,60,69]
-	},
-	{
-		"class": "puck_control",
-		"settings": ["Seti_SB_bright"],
-		"attributes": ["horizontal"],
-		"layer0.tint":[55,60,69]
-	},
 
-//========================================================
-//  EMPTY WINDOW BACKGROUND
-//--------------------------------------------------------
 
+/* --------------------------------------------------------
+  EMPTY WINDOW BACKGROUND
+-------------------------------------------------------- */
 	{
 		"class": "sheet_container_control",
 		"layer0.tint": [21,23,24],
 		"layer0.opacity": 1
 	},
 
-	// options
-	{
-		"class": "sheet_container_control",
-		"settings": ["Seti_in_4_a_treat"],
-		"layer0.opacity": 0,
-		"layer1.texture": "SuperSeti/Main/xyz/Empty.png",
-		"layer1.opacity": 1
-	},
-
-//========================================================
-//  GRID LAYOUT
-//--------------------------------------------------------
-
+/* --------------------------------------------------------
+  GRID LAYOUT
+-------------------------------------------------------- */
 	{
 		"class": "grid_layout_control",
 		"border_size": 1,
 		"border_color": [16,17,18]
 	},
 
-//========================================================
-//  MINI MAP
-//--------------------------------------------------------
-
+/* --------------------------------------------------------
+  MINI MAP
+-------------------------------------------------------- */
 	{
 		"class": "minimap_control",
 		"viewport_color": [21,23,24,180]
@@ -447,20 +408,19 @@
 	},
 
 
-//========================================================
-//  DIALOG
-//--------------------------------------------------------
-
+/* --------------------------------------------------------
+  DIALOG
+-------------------------------------------------------- */
 	{
 		"class": "dialog",
 		"layer0.tint": [21,23,24],
 		"layer0.opacity": 1
 	},
 
-//========================================================
-//  PROGRESS BAR
-//--------------------------------------------------------
 
+/* --------------------------------------------------------
+  PROGRESS BAR
+-------------------------------------------------------- */
 	{
 		"class": "progress_bar_control",
 		"layer0.tint": [94,235,184],
@@ -473,60 +433,67 @@
 		"content_margin": [0, 6]
 	},
 
-//========================================================
-//  LABELS
-//--------------------------------------------------------
+
+/* --------------------------------------------------------
+  LABELS
+-------------------------------------------------------- */
 
 	// General labels
 	{
 		"class": "label_control",
 		"color": [249, 255, 255]
 	},
+
 	// Text field labels
 	{
 		"class": "label_control",
 		"parents": [{"class": "panel_control"}]
 	},
+
 	// Button labels
 	{
 		"class": "label_control",
 		"parents": [{"class": "button_control"}]
 	},
 
-//========================================================
-//  TOOLTIP
-//--------------------------------------------------------
+
+/* --------------------------------------------------------
+  TOOLTIP
+-------------------------------------------------------- */
 
 	// Tooltip container
 	{
 		"class": "tool_tip_control",
-		"layer0.tint": [22,31,39],
+		"layer0.tint": [32,41,49],
 		"layer0.inner_margin": 1,
 		"layer0.opacity": 1,
 		"content_margin": [10, 8]
 	},
+
 	// Tooltip content
 	{
 		"class": "tool_tip_label_control",
-		"color": [138,177,194]
+		"color": [170,170,170]
 	},
 
-//========================================================
-//  STATUS BAR
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  STATUS BAR
+-------------------------------------------------------- */
 
 	// Status bar container
 	{
 		"class": "status_bar",
-		"layer0.tint": [20,21,25],
+		"layer0.tint": [34,37,43],
 		"layer0.opacity": 1,
 		"content_margin": [20, 7, 10, 7]
 	},
+
 	// Status bar button
 	{
 		"class": "status_button",
 		"min_size": [80, 0]
 	},
+	
 	// Status bar label
 	{
 		"class": "label_control",
@@ -534,9 +501,10 @@
 		"color": [170,170,170]
 	},
 
-//========================================================
-//  SIDEBAR
-//--------------------------------------------------------
+
+/* --------------------------------------------------------
+  SIDEBAR
+-------------------------------------------------------- */
 
 	// Sidebar container
 	{
@@ -545,66 +513,16 @@
 		"layer0.tint": [34,37,43],
 		"content_margin": [0,5,0,0]
 	},
+
 	// Sidebar tree || entries
 	{
 		"class": "sidebar_tree",
 		"row_padding": [8,7],
 		"indent": 15,
 		"indent_offset": 18,
-		"indent_top_level": true // which make OpenFiles & Folders expandable
+		"indent_top_level": true
 	},
 
-	// options
-	{
-		"class": "sidebar_tree",
-		"settings": ["Seti_sb_small_padding"],
-		"row_padding": [8,3]
-	},
-	{
-		"class": "sidebar_tree",
-		"settings": ["Seti_sb_big_padding"],
-		"row_padding": [8,10]
-	},
-	{
-		"class": "sidebar_tree",
-		"settings": ["Seti_sb_tree_med"],
-		"indent": 15,
-		"indent_offset": 15,
-	},
-	{
-		"class": "sidebar_tree",
-		"settings": ["Seti_sb_tree_small"],
-		"indent": 15,
-		"indent_offset": 10,
-	},
-	{
-		"class": "sidebar_tree",
-		"settings": ["Seti_sb_tree_tiny"],
-		"indent": 15,
-		"row_padding": [3,7],
-		"indent_offset": 1,
-	},
-	{
-		"class": "sidebar_tree",
-		"settings": ["Seti_sb_tree_miny"],
-		"indent": 5,
-		"row_padding": 5,
-		"indent_offset": 15,
-	},
-
-	// Sidebar rows || selected files bg
-	{
-		"class": "tree_row",
-		"layer0.texture": null,
-		"layer0.tint": [27, 28, 29],
-		"layer0.opacity": 0
-	},
-	// Sidebar row selected
-	{
-		"class": "tree_row",
-		"attributes": ["selected"],
-		"layer0.opacity": 1
-	},
 	// Sidebar heading
 	{
 		"class": "sidebar_heading",
@@ -613,13 +531,10 @@
 	},
 	{
 		"class": "sidebar_heading",
-		"parents": [{"class": "tree_row","attributes": ["selected"]}]
-	},
-	{
-		"class": "sidebar_heading",
-		"parents": [{"class": "tree_row","attributes": ["hover"]}],
+		"parents": [{"class": "tree_row", "attributes": ["hover"]}],
 		"color": [2,174,255]
 	},
+
 	// Sidebar files
 	{
 		"class": "sidebar_label",
@@ -630,34 +545,34 @@
 		"parents": [{"class": "tree_row","attributes": ["hover"]}],
 		"color": [255,255,255]
 	},
+
 	// Sidebar folder
 	{
 		"class": "sidebar_label",
 		"parents": [{"class": "tree_row","attributes": ["expandable"]}],
-		"color": [108,113,124],
-		"font.bold": false
+		"color": [108,113,124]
 	},
 	{
 		"class": "sidebar_label",
-		"parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
-		"color": [124,159,174]
-	},
-	{
-		"class": "sidebar_label",
-		"parents": [{"class": "tree_row","attributes": ["expandable"]}],
-		"settings": ["bold_folder_labels"],
-		"font.bold": true
-	},
-	// Sidebar open files entry selected
-	{
-		"class": "sidebar_label",
-		"parents": [{"class": "tree_row","attributes": ["selected"]}],
+		"parents": [{"class": "tree_row","attributes": ["expandable", "hover"]}],
 		"color": [255,255,255]
 	},
 
-//========================================================
-//  SIDEBAR - OPEN FILE ICONS
-//--------------------------------------------------------
+	// Sidebar open files or expanded folder or selected
+	{
+		"class": "sidebar_label",
+		"parents": [{"class": "tree_row","attributes": ["selected"]}],
+		"color": [79,153,211]
+	},
+	{
+		"class": "sidebar_label",
+		"parents": [{"class": "tree_row","attributes": ["expandable", "expanded"]}],
+		"color": [79,153,211]
+	},
+
+/* --------------------------------------------------------
+  SIDEBAR - OPEN FILE ICONS
+-------------------------------------------------------- */
 
 	// Sidebar file close
 	{
@@ -705,9 +620,9 @@
 		"layer0.opacity": 1
 	},
 
-//========================================================
-//  SIDEBAR - GENERAL FILE ICONS
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  SIDEBAR - GENERAL FILE ICONS
+-------------------------------------------------------- */
 
 	// Sidebar group closed
 	 {
@@ -802,9 +717,9 @@
 		"content_margin": 8
 	},
 
-//========================================================
-//  STANDARD TEXT BUTTONS
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  STANDARD TEXT BUTTONS
+-------------------------------------------------------- */
 
 	// Default button state
 	{
@@ -827,9 +742,9 @@
 		"layer0.tint": [255,152,0]
 	},
 
-//========================================================
-//  TEXT INPUT FIELD
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  TEXT INPUT FIELD
+-------------------------------------------------------- */
 
 	// Text input field item
 	{
@@ -852,15 +767,15 @@
 		"layer0.texture": "SuperSeti/Main/text-field-list-hover.png"
 	},
 
-//========================================================
-//  PANEL BACKGROUNDS
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  PANEL BACKGROUNDS
+-------------------------------------------------------- */
 
 	// Bottom panel background
 	{
 		"class": "panel_control",
 		"layer0.opacity": 1,
-		"layer0.tint": [20,21,25],
+		"layer0.tint": [34,37,43],
 		"content_margin": 0
 	},
 	// Quick panel background
@@ -880,9 +795,9 @@
 		"layer0.opacity": 1
 	},
 
-//========================================================
-//  QUICK PANEL
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  QUICK PANEL
+-------------------------------------------------------- */
 
 	{
 		"class": "quick_panel",
@@ -925,9 +840,9 @@
 		"selected_fg": [255,255,255]
 	},
 
-//========================================================
-//  MINI QUICK PANEL
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  MINI QUICK PANEL
+-------------------------------------------------------- */
 
 	{
 		"class": "mini_quick_panel_row",
@@ -945,9 +860,9 @@
 		"layer0.tint": [60,71,81]
 	},
 
-//========================================================
-//  CODE COMPLETION DROPDOWN
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  CODE COMPLETION DROPDOWN
+-------------------------------------------------------- */
 
 	{
 		"class": "popup_control",
@@ -977,9 +892,9 @@
 		"layer0.tint": [60,71,81]
 	},
 
-//========================================================
-//  BOTTOM PANEL BUTTONS
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  BOTTOM PANEL BUTTONS
+-------------------------------------------------------- */
 
 	// Button group middle
 	{
@@ -1099,9 +1014,9 @@
 		"attributes": ["left","right","selected"]
 	},
 
-//========================================================
-//  BOTTOM PANEL ICONS - GROUP 1
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  BOTTOM PANEL ICONS - GROUP 1
+-------------------------------------------------------- */
 
 	// Regex search button
 	{
@@ -1158,9 +1073,9 @@
 		"layer0.tint": [255,255,2]
 	},
 
-//========================================================
-//  BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
+-------------------------------------------------------- */
 
 	// Show search context button
 	{
@@ -1199,9 +1114,9 @@
 		"layer0.tint": [255,255,2]
 	},
 
-//========================================================
-//  BOTTOM PANEL ICONS - GROUP 2
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  BOTTOM PANEL ICONS - GROUP 2
+-------------------------------------------------------- */
 
 	// Reverse search direction button (ST2 only)
 	{
@@ -1258,9 +1173,9 @@
 		"layer0.tint": [255,255,2]
 	},
 
-//========================================================
-//  BOTTOM PANEL ICONS - GROUP 3
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  BOTTOM PANEL ICONS - GROUP 3
+-------------------------------------------------------- */
 
 	// Preserve case button
 	{
@@ -1281,9 +1196,9 @@
 		"layer0.tint": [255,255,2]
 	},
 
-//========================================================
-//  BOTTOM PANEL ICONS - GROUP 4
-//--------------------------------------------------------
+/* --------------------------------------------------------
+  BOTTOM PANEL ICONS - GROUP 4
+-------------------------------------------------------- */
 
 	// Highlight results button
 	{

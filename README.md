@@ -1,6 +1,6 @@
 # SuperSeti
 
-My own custom Seti UI. I arranged the colors to what I like to have lower contrasts and bluer highlights.
+My own custom Seti UI. I arranged the colors to have lower contrasts and bluer highlights.
 
 Original Atom's Seti_UI by [jesseweed](https://github.com/jesseweed/seti-ui)
 
@@ -15,7 +15,7 @@ I'm using a very slightly modified Twilight by Michael Sheets as a color Scheme.
 
 * Clone this repo to your `Sublime Text 3/Packages` folder.
 * Make sure the content of this repo is in a folder named `SuperSeti`.
-* In your `Preferences.sublime-settins` file add :
+* In your `Preferences.sublime-setting` file add :
 ```
   "theme": "SuperSeti.sublime-theme",
   "color_scheme": "Packages/SuperSeti/Scheme/Twilight.tmTheme"
